@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f4f0e7">
+<title>생명의 교실 · IOX Magic School</title><meta name="description" content="손끝에서 시작되는 작은 마법. 직접 그린 선이 모양과 색 그대로 칠판에서 떠올라 날아가는 모바일 마법 실험실.">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="classroom.css">
+</head>
+<body class="classroom-intro">
+<nav class="classroom-nav"><a id="returnBook" href="../index.html">‹ 마법학교</a><span id="roomGreeting">생명의 교실</span><button id="replayRoom" type="button">교실 다시 보기 ↺</button></nav>
+<header class="top"><a href="#" class="brand" aria-label="IOX Magic Lab 홈"><span class="mark">✧</span><span>iox <i>magic lab</i></span></a><span class="edition"><span></span> 마법학교 실험실 <b>01</b></span><button id="help" class="iconbutton" aria-label="사용 방법">?</button></header>
+<main>
+<div class="intro"><div><p class="eyebrow">THE LIVING BLACKBOARD</p><h1>손끝으로 그리는, <em>작은 생명.</em></h1><p class="description">어떤 그림이든 그려보세요. 모든 선이 나비처럼 날갯짓합니다.</p></div><span class="chapter">DRAW A LITTLE MAGIC <span>✶</span></span></div>
+<section class="laboratory" aria-label="생명의 칠판 그림판">
+<div class="scene" id="scene"><img class="shot-close" src="assets/classroom-close-v2.png" alt="실사 마법교실의 빈 초록 칠판과 칠판 아래 한글 안내 문구" draggable="false"><img class="shot-wide" src="assets/classroom-wide-v2.png" alt="꽃과 책장, 창문이 있는 실사 마법학교 교실 전경" draggable="false"><button id="wallInstruction" class="wall-instruction" aria-label="칠판에 아무거나 그리고 터치하여 마법을 부여해주세요"><span>칠판에 아무거나 그리고 터치하여 마법을 부여해주세요</span></button><div class="scene-tag"><span class="live-dot"></span> TOUCH & DRAW</div><button id="skipApproach" type="button">칠판으로 바로 가기</button><button id="expand" class="expand" aria-label="칠판 확대">⛶ <span>크게 보기</span></button><canvas id="drawing" aria-label="손가락이나 마우스로 그림을 그리는 칠판"></canvas><div class="hint" id="hint"><span class="hint-art">✧</span><p>여기에 자유롭게 그려보세요</p><small>그린 선이 날개처럼 접혔다 펼쳐져요</small></div><div id="stageMessage" class="stage-message" role="status"></div><div class="scene-caption"><span>02 / 선의 비행</span><span>햇살이 머무는 교실</span></div></div>
+<div class="workbench"><div class="tools"><div class="colors" role="group" aria-label="분필 색상"><button class="swatch selected" data-color="#f5f0d9" style="--c:#f5f0d9" aria-label="아이보리 분필" aria-pressed="true"></button><button class="swatch" data-color="#f3bc72" style="--c:#f3bc72" aria-label="황금색 분필" aria-pressed="false"></button><button class="swatch" data-color="#e9a8b6" style="--c:#e9a8b6" aria-label="분홍 분필" aria-pressed="false"></button><button class="swatch" data-color="#9ecfdd" style="--c:#9ecfdd" aria-label="하늘색 분필" aria-pressed="false"></button><button class="swatch" data-color="#bacda5" style="--c:#bacda5" aria-label="연두 분필" aria-pressed="false"></button></div><span class="divider"></span><label class="size-label">굵기 <input id="size" type="range" min="2" max="16" value="5" aria-label="분필 굵기"></label><button id="eraser" class="tool" aria-pressed="false">▱ <span>지우개</span></button><button id="undo" class="tool" aria-label="마지막 획 되돌리기">↶ <span>되돌리기</span></button><button id="clear" class="tool">⌫ <span>비우기</span></button></div><div class="tools secondary"><button id="example" class="example">나비 예제 <span>↗</span></button><button id="save" class="tool" aria-label="그림을 PNG로 저장">↓ <span>저장</span></button></div></div>
+</section>
+<div class="below"><div class="spell-settings"><span class="section-label">이번 실험</span><label class="select-wrap"><select id="mode" aria-label="변신 방식"><option value="lines">그린 선으로 나비 날갯짓</option><option value="butterfly">나비로 생명 불어넣기</option><option value="auto">나비 형태 확인 후 실행</option></select></label><button id="sound" class="sound" aria-pressed="false" aria-label="마법 효과음 켜기">♫ <span>소리 꺼짐</span></button></div><button id="bringAlive" class="magic-button"><span>✧</span> <span id="magicLabel">마법 부여하기</span> <span class="arrow">↗</span></button></div>
+<div class="footnote"><p id="status" aria-live="polite">분필을 고르고 그림을 시작해보세요.</p><p><span class="tiny-star">✦</span> 마법학교 연결 · v2.0</p></div>
+<div class="instructions"><span>01 <b>그려요</b> 손가락으로 자유롭게</span><i>—</i><span>02 <b>띄워요</b> 선 날려보내기</span><i>—</i><span>03 <b>날아올라요</b> 그린 모양 그대로</span></div>
+</main>
+<footer><span>IOX COMPANY</span><p>상상이 생명이 되는 곳.</p><button id="about">실험 안내 ↗</button></footer>
+<canvas id="magic" aria-hidden="true"></canvas><div class="toast" id="toast" role="status"></div>
+<dialog id="helpDialog"><button class="close" aria-label="닫기">×</button><p class="eyebrow">A LITTLE GUIDE</p><h2>첫 번째 생명 마법</h2><p>칠판 위를 손가락으로 움직이면 분필 그림이 그려집니다. 어떤 그림이든 그린 뒤 <strong>선 날려보내기</strong>를 누르세요. 원래 색과 선을 유지하면서 그림 양쪽이 나비 날개처럼 접혔다 펼쳐지고, 공중을 날아갑니다.</p><ol><li><b>바로 체험:</b> ‘나비 예제’ → ‘선 날려보내기’</li><li><b>직접 그리기:</b> 색과 굵기를 골라 칠판에 그리세요.</li><li><b>모바일:</b> ‘크게 보기’ 또는 휴대폰 가로 방향을 이용하세요.</li></ol><p class="notice">기본 모드는 모든 선을 그림의 중심을 기준으로 부드럽게 접었다 펼칩니다. 원래 선과 색, 지운 부분은 유지되며 날갯짓하는 동안 모양에 원근과 휘어짐이 적용됩니다. 나비 모양이 아니어도 모든 그림에 적용됩니다. 실사 나비 효과는 모드에서 별도로 선택할 수 있습니다. ‘형태 확인’은 좌우 분포를 비교하는 간단한 테스트이며, AI 사물 인식이나 자유 그림의 실사 생성은 아직 연결하지 않았습니다.</p><p class="notice">그림은 이 기기에 자동 보관됩니다. 외부 서버로 전송하지 않습니다. ‘비우기’로 지우거나 PNG로 저장할 수 있습니다.</p><button class="magic-button close-guide">그려볼게요 <span>↗</span></button></dialog>
+<script src="app.js"></script>
+<script src="classroom.js"></script>
+</body></html>
