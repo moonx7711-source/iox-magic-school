@@ -1,0 +1,48 @@
+/* Immersive classroom. Photographs retain their full 16:9 framing in the default view. */
+:root{--paper:#211d16;--ink:#f4e9cc;--muted:#bdab8c;--line:#98816a44}
+html,body{min-height:100%;background:#211d16}body{background:radial-gradient(ellipse at 50% 35%,#5c4930,#1e1b16 85%);color:#f4e9cc}
+body::before{content:'';position:fixed;inset:-30px;background:linear-gradient(#211d1677,#211d16d9),url('assets/classroom-wide-v2.png') center/cover;filter:blur(18px);pointer-events:none}
+.top,.intro,footer,.instructions,.scene-tag,.scene-caption,.footnote p:last-child{display:none!important}
+main{position:relative;max-width:none;padding:46px 0 15px;min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.laboratory{width:100%;padding:0;background:none;box-shadow:none;border:0;border-radius:0}
+.scene,.scene.zoomed{width:100%;height:calc(100dvh - 194px);max-height:1000px;min-height:180px;aspect-ratio:auto;border-radius:0;background:transparent;isolation:isolate}
+.scene>img{object-fit:contain;object-position:center;transition:opacity 1.3s ease,transform 3s cubic-bezier(.3,.1,.2,1);will-change:transform,opacity}
+.scene .shot-wide{z-index:4;opacity:1;pointer-events:none;transform-origin:45% 39%}
+.scene .shot-close{opacity:0}
+.classroom-approaching .scene .shot-wide{transform:translate(5%,4%) scale(1.57)}
+.classroom-crossfade .scene .shot-wide{opacity:0}
+.classroom-crossfade .scene .shot-close{opacity:1}
+.classroom-ready .scene .shot-wide{visibility:hidden}
+#drawing{opacity:0;pointer-events:none;z-index:2}
+.classroom-ready #drawing{opacity:1;pointer-events:auto}
+#hint{display:none!important}.stage-message{display:none!important}
+.wall-instruction{position:absolute;z-index:5;background:none;border:0;padding:0;color:#3b2110;text-align:center;white-space:nowrap;font:normal 14px 'Malgun Gothic',sans-serif;opacity:0;pointer-events:none;border-radius:8px}
+.wall-instruction span{opacity:0;display:block;font-size:inherit;line-height:1.2;letter-spacing:-.03em}
+.classroom-ready .wall-instruction{opacity:1;pointer-events:auto;}
+.wall-instruction:hover{color:#fff1ae}.wall-instruction:focus-visible{outline:1px solid #fff2b5;outline-offset:5px}
+@keyframes wall-letters-light{0%,100%{color:#573219;text-shadow:0 0 2px #ffeab955}50%{color:#fff3b5;text-shadow:0 0 3px #ffeec7,0 0 9px #ffe0a0,0 0 19px #ffc168}}
+.classroom-nav{position:absolute;z-index:10;left:0;top:0;width:100%;height:46px;padding:8px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:11px;letter-spacing:.5px;color:#e0ceac}
+.classroom-nav a,.classroom-nav button{background:#261d14aa;border:1px solid #ccaf7540;color:#e8d4af;border-radius:22px;padding:7px 11px;font-size:10px;white-space:nowrap}.classroom-nav>span{font-family:Georgia,serif;font-size:12px;color:#c4b08a;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#skipApproach{position:absolute;z-index:6;bottom:20px;left:50%;transform:translateX(-50%);background:#211b12bb;color:#f1dfb8;padding:10px 18px;border:1px solid #c7ae7055;border-radius:30px;font-size:11px;backdrop-filter:blur(5px)}
+.classroom-ready #skipApproach{display:none}.classroom-intro #expand{display:none}
+.expand{top:12px;right:18px;background:#201b15cc}.scene.zoomed>img{object-fit:cover}
+.workbench{padding:12px 22px 8px;min-height:55px;max-width:1000px;margin:auto;gap:12px}
+.tools{gap:18px}.tool,.sound{color:#d6c6a8}.tool:disabled{opacity:.25}.size-label{color:#c6b596}.divider{background:#96836955}.example{border-color:#aa946b55;color:#e1cda7}.example span{color:#d4af6c}.swatch.selected:after{border-color:#f4ddad}
+.below{width:100%;max-width:1000px;margin:0 auto;justify-content:space-between;padding:5px 22px;gap:12px}.spell-settings{gap:14px}.section-label{display:none}select{color:#d1c0a1;border-color:#80694c;background:#251e17}.magic-button{background:linear-gradient(145deg,#44634c,#294835);border-color:#c9ae6555;color:#f5e4b9;padding:11px 20px;box-shadow:0 0 20px #c5a15710}
+.footnote{margin:2px 20px 0;font-size:10px;color:#b8a685}.footnote p{margin:3px 0;text-align:center}
+.classroom-intro .workbench,.classroom-intro .below{opacity:.25;pointer-events:none}
+.toast{z-index:60}dialog{background:#f4f0e7;color:#263c2e}dialog .eyebrow{color:#9d8150}
+@media(max-width:800px){main{padding-top:48px}.tools{gap:14px}.workbench{padding:12px 18px 7px;flex-wrap:nowrap}.secondary{width:auto;margin-left:auto;padding:0;border:0}.tool span{display:none}.secondary .tool span{display:none}.below{padding:5px 18px}.scene,.scene.zoomed{height:calc(100dvh - 211px);min-height:230px}.classroom-nav{padding:8px 14px}.classroom-nav>span{font-size:10px}.instructions{display:none}.magic-button{font-size:12px}.size-label{font-size:0;gap:0}.colors{gap:11px}.swatch{width:18px;height:18px}.tools{gap:13px}.example{font-size:10px;padding:7px 8px}.example span{display:none}input[type=range]{width:44px}}
+@media(max-width:540px){.scene,.scene.zoomed{height:calc(100dvh - 230px)}.workbench{gap:12px;flex-wrap:wrap;justify-content:center}.tools{gap:14px}.secondary{width:100%;justify-content:center;gap:25px;padding-top:2px}.secondary .tool span{display:inline}.example{border:0;background:none;padding:4px 0}.below{margin-top:3px}.spell-settings{gap:6px}select{max-width:170px;font-size:10px}.magic-button{padding:11px 14px;gap:8px}.magic-button .arrow{margin-left:4px}.footnote{font-size:9px}.scene.zoomed{height:calc(100dvh - 230px)}.classroom-nav button{font-size:9px}.classroom-nav>span{max-width:112px}}
+@media(max-height:520px){main{padding-top:35px}.classroom-nav{height:35px}.scene,.scene.zoomed{height:calc(100dvh - 125px);min-height:130px}.workbench{min-height:38px;padding:4px 20px}.below{padding:0 20px}.footnote{display:none}.magic-button{padding:5px 15px}.magic-button span:first-child{font-size:19px}.secondary{width:auto;border:0;padding:0}.tools{gap:14px}}
+@media(prefers-reduced-motion:reduce){.scene>img{transition:none}.classroom-ready .wall-instruction{animation:none;color:#fce6b5;text-shadow:0 0 7px #ffce70}}
+
+.wall-instruction{overflow:hidden;mix-blend-mode:screen;filter:drop-shadow(0 0 4px #ffdf8d)}
+.instruction-ink{position:absolute;max-width:none;object-fit:fill;filter:grayscale(1) invert(1) contrast(6) brightness(1.3);pointer-events:none;animation:original-ink-glow 2.6s ease-in-out infinite}
+@keyframes original-ink-glow{0%,100%{opacity:.05}50%{opacity:.92}}
+@media(prefers-reduced-motion:reduce){.instruction-ink{animation:none;opacity:.65}}
+
+@media(max-width:540px) and (orientation:portrait){main{justify-content:center;padding-top:48px}.scene,.scene.zoomed{height:auto;min-height:0;aspect-ratio:16/9}.scene.zoomed{aspect-ratio:4/5}.workbench{padding-top:18px}.below{margin-top:8px}.classroom-nav{position:fixed;background:#211b1488}.wall-instruction{border-radius:0}}
+
+/* Prevent focus from scrolling the clipped cinematic zoom plane. */
+.scene,.scene.zoomed{overflow:clip}.classroom-ready .scene .shot-wide{display:none}

@@ -1,0 +1,271 @@
+:root{--ink:#19334c;--gold:#94662a;--paper:#faf8f0;--line:#9b815741;--serif:'Noto Serif KR','Nanum Myeongjo','Batang',Georgia,serif;--sans:'Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;color:var(--ink);background:var(--paper);font-family:var(--sans);line-height:1.65}button,input,select{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button{color:inherit;cursor:pointer}a{color:inherit;text-decoration:none}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #3a85a7;outline-offset:5px}button:disabled{cursor:default}.skip{position:fixed;top:-100px;left:10px;background:#fff;padding:12px;z-index:100}.skip:focus{top:10px}.landscape{position:absolute;inset:0 0 auto;height:100svh;min-height:760px;background:#ecf0e9 url('assets/watercolor-background.png') center/cover no-repeat;z-index:-1}.header{height:90px;display:flex;align-items:center;justify-content:space-between;padding:0 6.4%;border-bottom:1px solid var(--line);gap:35px;position:relative;z-index:5;background:#fff8;backdrop-filter:blur(8px)}.brand{display:flex;flex-direction:column;font-family:var(--serif);line-height:1.2}.brand span{font-weight:700;font-size:27px;letter-spacing:.04em}.brand small{font:8px var(--sans);letter-spacing:.23em;margin-top:7px;color:#766546}.desktop-nav{display:flex;gap:44px;font-size:14px;letter-spacing:.04em}.desktop-nav a{padding:15px 0}.desktop-nav a:hover{color:var(--gold)}.header-cta{border:1px solid #7d6a4b85;border-radius:3px;background:#fff5;padding:8px 23px;font-size:13px}.header-cta:hover{background:#fff}.menu-button{display:none}.mobile-nav{position:absolute;top:100%;left:0;right:0;background:#fcfaf4;padding:20px 25px;box-shadow:0 10px 25px #28445b17}.mobile-nav:not([hidden]){display:flex;flex-direction:column;gap:18px}.mobile-nav button{text-align:left;background:none;border:0;padding:0}.hero{min-height:670px;height:calc(100svh - 90px);position:relative;display:flex;align-items:center;flex-direction:column;text-align:center;overflow:hidden}.hero-copy{padding-top:clamp(36px,6vh,76px);position:relative;z-index:2;pointer-events:none}.eyebrow{font-family:Georgia,serif;font-size:11px;letter-spacing:.32em;margin:0 0 20px;color:#775a30}.hero h1{font-family:var(--serif);font-size:clamp(42px,4.3vw,67px);font-weight:500;line-height:1.4;letter-spacing:-.045em;margin:0;text-shadow:0 2px 20px #fff}.hero h1 span{color:#825b29}.hero-intro{font-size:15px;margin:15px 15px 0;text-shadow:0 0 14px #fff,0 0 8px #fff}.wand-stage{background:none;border:0;display:block;position:relative;width:min(1320px,94vw);height:clamp(145px,23vh,230px);flex-shrink:0;margin:1vh 0 0;padding:0;isolation:isolate;border-radius:50%}.wand-visual{position:absolute;left:50%;top:50%;width:100%;aspect-ratio:2172/724;transform:translate(-50%,-50%);pointer-events:none}.wand-visual img,.wand-visual canvas{position:absolute;width:100%;height:100%;inset:0;object-fit:contain}.wand-visual img{filter:drop-shadow(0 14px 15px #5d554c23)}.wand-visual canvas{z-index:1;pointer-events:none}.wand-stage:focus-visible{outline-offset:-20px}.hero-bottom{position:relative;z-index:2}.touch-hint{font-size:11px;letter-spacing:.08em;margin:0 0 15px;color:#596f7c;text-shadow:0 0 8px #fff}.hero-description{font-size:14px;line-height:1.9;margin:0 15px;text-shadow:0 0 12px #fff,0 0 8px #fff}.mobile-break{display:none}.actions{display:flex;justify-content:center;gap:16px;margin-top:27px}.primary,.secondary{border:1px solid #96703b;border-radius:3px;padding:13px 26px;display:inline-flex;align-items:center;justify-content:center;gap:28px;font-size:15px;letter-spacing:.02em;min-height:51px;transition:background .2s,box-shadow .2s,transform .2s}.primary{background:#936b34;color:#fffdf5;box-shadow:0 3px 20px #7a4c2426}.primary:hover{background:#795525;box-shadow:0 6px 22px #7a4c2440;transform:translateY(-2px)}.secondary{background:#fffc;color:#254055;border-color:#41586f88}.secondary:hover{background:#fff;transform:translateY(-2px)}.effect-controls{display:flex;align-items:center;justify-content:center;gap:10px;margin:16px 0 0;color:#53636d}.effect-controls button{border:0;border-bottom:1px solid transparent;background:transparent;padding:5px;font-size:10px}.effect-controls button:hover{border-color:currentColor}.scroll-cue{position:absolute;bottom:18px;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:9px;letter-spacing:.12em;color:#36546a;text-shadow:0 0 8px #fff}.scroll-cue span{font-size:18px}.paper-section{max-width:1160px;margin:auto;padding:100px 40px}.school{text-align:center}.paper-section h2{font-family:var(--serif);font-weight:500;font-size:clamp(25px,3vw,38px);letter-spacing:-.045em;margin:0 0 25px;line-height:1.5}.section-lead{color:#5b6870;line-height:2.1;font-size:16px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:60px;text-align:left;border-top:1px solid var(--line);padding-top:30px}.steps>div{padding:0 20px}.steps span,.course-number{font-family:Georgia,serif;color:#9a793f;font-size:12px;letter-spacing:.08em}.steps h3{font-weight:500;font-size:17px;margin:14px 0}.steps p{font-size:14px;color:#6a747b}.classes{border-top:1px solid var(--line);padding-top:65px}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:20px}.section-heading>p{font-size:12px;color:#6b747a}.class-list button{display:flex;width:100%;text-align:left;gap:30px;align-items:center;border:0;border-top:1px solid var(--line);padding:25px 15px;background:none;transition:background .2s}.class-list button:last-child{border-bottom:1px solid var(--line)}.class-list button:hover{background:#eee7d866}.class-list button>span:last-child{margin-left:auto;color:#9a793f;font-size:22px}.class-list strong{display:block;font:22px var(--serif)}.class-list small{display:block;margin-top:7px;color:#6a747b;font-size:12px}.library{text-align:center;padding-top:35px;padding-bottom:100px}.library p:not(.eyebrow){color:#69757c;line-height:2}.library .primary{margin-top:20px}footer{position:relative;text-align:center;border-top:1px solid var(--line);padding:45px 25px;background:#eeeadd44}footer .footer-brand{font:24px var(--serif)}footer p{font-size:12px;color:#727c80}footer small{display:block;font-size:10px;color:#727c80}footer>a{display:inline-block;margin-top:22px;font-size:11px}dialog{width:min(490px,calc(100vw - 32px));border:1px solid #bda77f;border-radius:4px;padding:57px 40px 35px;background:#fcfaf1;color:var(--ink);box-shadow:0 25px 100px #162f4c30;max-height:90svh;overflow:auto}dialog::backdrop{background:#1b334b55;backdrop-filter:blur(7px)}dialog h2{font:29px var(--serif);margin:0 0 18px}dialog .eyebrow{font-size:9px;margin-bottom:18px}dialog .close-dialog{position:absolute;right:18px;top:15px;border:0;background:none;font-size:12px;color:#6c747b}.dialog-intro{font-size:14px;line-height:1.9;color:#6a747b}form{margin-top:27px}label{display:block;font-size:12px;margin:20px 0 8px}input,select{width:100%;min-height:48px;border:1px solid #a1917160;border-radius:3px;padding:10px 12px;background:#fff9;color:var(--ink)}form .primary{margin-top:28px;width:100%;font-size:14px}.form-note{font-size:10px!important;color:#7b807e!important;line-height:1.7!important;margin-top:16px!important}.first-project{margin:25px 0;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.first-project small{color:var(--gold);font-size:11px}.first-project h3{font:22px var(--serif)}.first-project p{font-size:14px;color:#66727b}.result-greeting{font-size:15px}#invite-result .primary{width:100%}.text-button{display:block;margin:16px auto 0;background:none;border:0;text-decoration:underline;font-size:12px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}
+@media(min-width:1500px){.wand-stage{width:min(1400px,88vw)}}
+@media(max-height:800px) and (min-width:701px){.hero-copy{padding-top:32px}.hero h1{font-size:47px}.wand-stage{height:160px;margin-top:0}.hero-intro{margin-top:8px}.touch-hint{margin-bottom:8px}.actions{margin-top:18px}.hero{min-height:660px}.landscape{min-height:750px}}
+@media(max-width:700px){html{scroll-padding-top:72px}.header{height:77px;padding:0 6%;gap:16px}.brand span{font-size:24px}.brand small{font-size:6px;letter-spacing:.17em}.desktop-nav{display:none}.header-cta{margin-left:auto;font-size:11px;padding:7px 13px}.menu-button{display:block;border:0;background:none;padding:8px 0;font-size:12px}.landscape{height:max(850px,100svh);min-height:850px;background-position:60% center}.hero{height:calc(100svh - 77px);min-height:773px}.hero-copy{padding-top:58px}.eyebrow{font-size:9px;letter-spacing:.24em;margin-bottom:23px}.hero h1{font-size:clamp(36px,9.2vw,52px);line-height:1.55;letter-spacing:-.06em}.hero-intro{font-size:12px;margin-top:17px;padding:0 20px}.wand-stage{height:210px;width:100vw;margin-top:15px}.wand-visual{width:97%}.hero-bottom{width:100%;padding:0 25px}.touch-hint{font-size:10px;margin-bottom:19px}.hero-description{font-size:12px;line-height:1.9}.mobile-break{display:block}.actions{flex-direction:column;align-items:stretch;gap:12px;margin:27px auto 0;width:min(300px,100%)}.primary,.secondary{padding:12px 20px;font-size:14px;min-height:49px;gap:35px}.effect-controls{margin-top:14px}.effect-controls button{font-size:9px}.scroll-cue{bottom:15px;font-size:8px}.paper-section{padding:70px 26px}.paper-section h2{font-size:27px}.section-lead{font-size:14px}.steps{grid-template-columns:1fr;gap:20px;margin-top:35px;text-align:center}.steps>div{padding:0}.steps h3{margin:8px 0}.steps p{margin:8px 0}.section-heading{display:block}.section-heading>p{font-size:10px}.class-list button{padding:23px 0;gap:20px}.class-list strong{font-size:21px}.class-list small{font-size:11px}.library p:not(.eyebrow){font-size:13px}.library{padding-top:20px}dialog{padding:55px 27px 30px}.hero-description{margin:0}.hero-copy .eyebrow{margin-bottom:22px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+/* Keep the scroll hint clear of controls at compact phone heights. */
+@media(max-width:700px){.hero{height:auto;min-height:calc(100svh - 77px);padding-bottom:16px}.scroll-cue{position:static;margin-top:20px;flex-shrink:0;min-height:40px}}
+
+@font-face{font-family:'Classic Letter';src:url('assets/classic-letter-italic.ttf') format('truetype');font-style:italic;font-weight:400;font-display:swap}
+.brand span,.footer-brand{font-family:'Classic Letter',Georgia,'Times New Roman',serif!important;font-style:italic;font-weight:400!important;letter-spacing:.015em!important;color:#234736}
+.brand span{font-size:37px;line-height:1.08;white-space:nowrap}.brand small{font-size:7px;letter-spacing:.2em;margin-top:7px}.footer-brand{font-size:34px!important}
+.wand-visual canvas{mix-blend-mode:screen;opacity:.9}
+@media(max-width:700px){.brand span{font-size:31px}.brand small{font-size:6px;letter-spacing:.12em}.header{gap:13px}}
+/* Scoped v3: change only the top navigation banner material. */
+.header{background:#eddbb9 url('assets/parchment-header-v3.png') center center/cover no-repeat;backdrop-filter:none}
+
+/* Scoped v4: grand magical castle behind the sharply focused wand. */
+.landscape{background-image:url('assets/grand-castle-background-v4.png');filter:blur(2.5px)}
+
+/* Scoped v5: selected secret-map admission letter. */
+dialog.letter-mode{width:min(600px,calc(100vw - 24px));padding:0;border-color:#b58b4a;background:#23180f;overflow:auto;max-height:94svh}
+.letter-mode .close-dialog{z-index:2;right:12px;top:12px;background:#23180fe6;color:#fff5dc;padding:8px 13px;border:1px solid #e2c99077;border-radius:30px}
+.invitation-art{display:block;width:100%;height:auto;max-height:75svh;object-fit:contain;background:#21160e}
+.letter-actions{padding:16px 24px 20px;display:flex;flex-direction:column;align-items:center;gap:10px;background:#fbf2de}
+.letter-actions .primary{width:100%;font-size:14px;min-height:48px;padding:10px 18px}
+.letter-download{font-size:12px;color:#73552a;text-decoration:underline;text-underline-offset:3px}
+#view-invitation{margin:0 0 15px;color:#84602d}
+@media(max-width:700px){dialog.letter-mode{width:calc(100vw - 20px)}.letter-actions{padding:14px 18px 18px}.invitation-art{max-height:72svh}}
+
+/* Scoped v6: three-panel parchment opening, synchronized with paper sound. */
+.letter-scene{position:relative;perspective:1400px;width:min(100%,60svh);margin:auto;isolation:isolate;transform-origin:50% 50%}
+.letter-scene .invitation-art{width:100%;height:auto;max-height:none;aspect-ratio:1122/1403}
+.letter-folds{display:none;position:absolute;inset:0;transform-style:preserve-3d;pointer-events:none}
+.letter-fold{position:absolute;top:0;bottom:0;width:33.333334%;transform-style:preserve-3d}
+.fold-left{left:0;transform-origin:100% 50%;z-index:3}.fold-center{left:33.333333%;z-index:1}.fold-right{right:0;transform-origin:0 50%;z-index:2}
+.fold-front,.fold-back{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.fold-front{background-image:url('assets/invitation-secret-map-v5.webp');background-repeat:no-repeat;background-size:300% 100%}
+.fold-left .fold-front{background-position:0 0}.fold-center .fold-front{background-position:50% 0}.fold-right .fold-front{background-position:100% 0}
+.fold-back{transform:rotateY(180deg);background:#d7b67c url('assets/parchment-header-v3.png') center/cover;box-shadow:inset 0 0 30px #754b3540;border:1px solid #a87b4966}
+.unfolding .letter-scene{animation:letter-arrive 1.8s cubic-bezier(.2,.65,.22,1) both}
+.unfolding .invitation-art{visibility:hidden}.unfolding .letter-folds{display:block}
+.unfolding .fold-left{animation:paper-left 1.4s cubic-bezier(.2,.7,.25,1) .1s both}
+.unfolding .fold-right{animation:paper-right 1.45s cubic-bezier(.2,.7,.25,1) .25s both}
+.unfolding .letter-actions{animation:letter-actions-reveal 1.8s ease both}
+.letter-tools{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.letter-tools button{padding:4px 2px;border:0;background:none;color:#73552a;font-size:11px;min-height:30px}
+.letter-tools button:hover{text-decoration:underline;text-underline-offset:4px}
+@keyframes letter-arrive{0%{transform:translateY(18px) scale(.84);opacity:0}14%{opacity:1}100%{transform:translateY(0) scale(1);opacity:1}}
+@keyframes paper-left{0%{transform:rotateY(165deg);filter:brightness(.74)}100%{transform:rotateY(0);filter:brightness(1)}}
+@keyframes paper-right{0%{transform:rotateY(-165deg);filter:brightness(.7)}100%{transform:rotateY(0);filter:brightness(1)}}
+@keyframes letter-actions-reveal{0%,60%{opacity:0;transform:translateY(8px)}100%{opacity:1;transform:translateY(0)}}
+@media(max-width:700px){.letter-scene{width:min(100%,57.6svh)}}
+@media(prefers-reduced-motion:reduce){.unfolding .letter-scene,.unfolding .letter-actions,.unfolding .letter-fold{animation:none!important}.unfolding .invitation-art{visibility:visible}.unfolding .letter-folds{display:none}}
+
+/* v8: minimal castle main, realistic dip pen and navy cursive RGB outline. */
+.minimal-main{overflow-x:hidden;background:#e7eff0}
+.minimal-main .header{height:90px;justify-content:center;padding:0 20px;gap:0}
+.minimal-main .brand span{font-size:45px}
+.minimal-main .landscape{position:fixed;inset:86px -5px -5px;height:auto;min-height:0;background-position:60% center;filter:blur(2px)}
+.minimal-main .hero{height:calc(100svh - 90px);min-height:510px;overflow:hidden;display:block;padding:0}
+.minimal-main .wand-stage{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:min(1320px,96vw);height:200px;margin:0;border-radius:0}
+.quill-test{--pen-width:min(142px,calc((100vw - 48px) / 3.766360));position:absolute;left:50%;top:73%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;gap:8px;background:none;border:0;padding:12px 18px;border-radius:20px;min-height:140px;isolation:isolate}
+.test-quill{display:block;width:var(--pen-width);height:calc(var(--pen-width) * 1.070423);object-fit:contain;flex:0 0 auto;filter:drop-shadow(0 4px 5px #16334a24);transition:transform .35s}
+
+
+
+
+.quill-test:hover .quill-visual{filter:brightness(1.06)}
+.quill-test:active{transform:translate(-50%,-50%) scale(.97)}
+.quill-test:focus-visible{outline:2px solid #183765;outline-offset:5px;background:#ffffff30}
+
+
+@media(max-width:700px){.minimal-main .header{height:76px}.minimal-main .brand span{font-size:37px}.minimal-main .landscape{top:72px;background-position:60% center}.minimal-main .hero{height:calc(100svh - 76px);min-height:470px}.minimal-main .wand-stage{top:44%;width:100vw;height:150px}.quill-test{top:73%;gap:5px;padding:10px 14px;min-height:116px}.test-quill{width:var(--pen-width);height:calc(var(--pen-width) * 1.070423)}}
+
+
+/* Light is confined to the metal nib; the feather keeps its photographic texture. */
+.quill-visual{position:relative;display:block;width:var(--pen-width);height:calc(var(--pen-width) * 1.070423);transform-origin:50% 70%;animation:quill-float 7.2s ease-in-out infinite;pointer-events:none}
+.quill-visual .test-quill{position:absolute;inset:0;transition:none}
+.nib-light{position:absolute;inset:0;display:block;width:100%;height:100%;overflow:visible;pointer-events:none;animation:nib-rgb-glow 7s ease-in-out infinite}
+.page-inactive .nib-light{animation-play-state:paused}
+@keyframes nib-rgb-glow{0%,100%{filter:hue-rotate(0deg);opacity:.75}35%{filter:hue-rotate(75deg);opacity:1}70%{filter:hue-rotate(190deg);opacity:.8}}
+@media(prefers-reduced-motion:reduce){.nib-light{animation:none;opacity:.8}.quill-visual{transition:none}}
+
+/* Two quiet rings expand from the dip-pen tip, moving with the feather. */
+.quill-visual::before,.quill-visual::after{content:'';position:absolute;left:13.54%;top:82.84%;width:clamp(18px,calc(var(--pen-width) * .21),30px);aspect-ratio:1;border:1px solid #5b94b9;border-radius:50%;box-shadow:0 0 6px #e8fcff,inset 0 0 4px #ffffffb3;opacity:0;transform:translate(-50%,-50%) scale(.35);animation:nib-touch-ring 3.6s ease-out infinite;pointer-events:none;z-index:2}
+.quill-visual::after{animation-delay:.65s}
+@keyframes nib-touch-ring{0%,65%,100%{opacity:0;transform:translate(-50%,-50%) scale(.35)}10%{opacity:.6}55%{opacity:0;transform:translate(-50%,-50%) scale(1.65)}}
+@keyframes quill-float{0%,100%{transform:translate3d(-1px,2px,0) rotate(-1deg)}25%{transform:translate3d(2px,-3px,0) rotate(.6deg)}50%{transform:translate3d(1px,-5px,0) rotate(1.2deg)}75%{transform:translate3d(-2px,-1px,0) rotate(-.4deg)}}
+.page-inactive .quill-visual,.page-inactive .quill-visual::before,.page-inactive .quill-visual::after,.minimal-main:has(#invitation[open]) .quill-visual,.minimal-main:has(#invitation[open]) .quill-visual::before,.minimal-main:has(#invitation[open]) .quill-visual::after{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.quill-visual{animation:none}.quill-visual::before,.quill-visual::after{animation:none;display:none}}
+
+/* The wand and its internal RGB canvas float as one horizontal object. */
+.minimal-main .wand-visual{--wand-lift:clamp(7px,1.2vw,16px);transform-origin:50% 50%;animation:wand-float 14s ease-in-out infinite}
+@keyframes wand-float{0%,100%{transform:translate(-50%,-50%) translate3d(-3px,5px,0) rotate(-.55deg)}25%{transform:translate(-50%,-50%) translate3d(2px,calc(var(--wand-lift) * -.55),0) rotate(.25deg)}50%{transform:translate(-50%,-50%) translate3d(3px,calc(var(--wand-lift) * -1),0) rotate(.65deg)}75%{transform:translate(-50%,-50%) translate3d(-2px,0,0) rotate(-.2deg)}}
+.page-inactive .wand-visual,.minimal-main:has(#invitation[open]) .wand-visual{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.minimal-main .wand-visual{animation:none;transform:translate(-50%,-50%)}}
+
+/* Full-screen library scene; both supplied photographs share this coordinate space. */
+.minimal-main .wand-stage{cursor:pointer;touch-action:manipulation}
+.minimal-main .wand-stage:focus-visible{outline:2px solid #315d80;outline-offset:8px}
+.crystal-open{overflow:hidden}
+.crystal-open .wand-visual,.crystal-open .quill-visual,.crystal-open .quill-visual::before,.crystal-open .quill-visual::after,.crystal-open .nib-light{animation-play-state:paused}
+#crystal-experience{position:fixed;inset:0;margin:0;width:100vw;height:100vh;height:100dvh;max-width:none;max-height:none;padding:0;border:0;border-radius:0;overflow:hidden;background:#160f09;color:#fff3d9;isolation:isolate}
+#crystal-experience::backdrop{background:#100b08}
+.crystal-backdrop{position:absolute;inset:-15px;background:#160f09 url('assets/crystal-library-empty-v1.webp') center/cover;filter:blur(12px);opacity:.6;pointer-events:none}
+.crystal-stage{position:absolute;left:50%;top:50%;width:max(100vw,min(177.7778vh,285vw));width:max(100vw,min(177.7778dvh,285vw));aspect-ratio:16/9;transform:translate(-50%,-50%);opacity:0;transition:opacity 1s ease;mask-image:linear-gradient(to bottom,transparent,#000 4%,#000 95%,transparent);-webkit-mask-image:linear-gradient(to bottom,transparent,#000 4%,#000 95%,transparent)}
+.scene-ready .crystal-stage{opacity:1}
+.crystal-room{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none}
+.crystal-interior,#touch-crystal{position:absolute;left:50%;top:42.8%;width:29.8%;height:49.4%;transform:translate(-50%,-50%);border-radius:50%}
+.crystal-interior{overflow:hidden;pointer-events:none}
+.crystal-reveal{position:absolute;inset:0;opacity:0;filter:blur(7px);mask-image:radial-gradient(ellipse closest-side,#000 88%,transparent 100%);-webkit-mask-image:radial-gradient(ellipse closest-side,#000 88%,transparent 100%)}
+.crystal-reveal img{position:absolute;left:50%;top:50%;width:303%;height:auto;max-width:none;transform:translate(-50%,-40.9%);display:block}
+.revealing .crystal-reveal{opacity:1;filter:blur(0);transition:opacity 4.6s cubic-bezier(.22,.38,.3,1),filter 4.6s ease}
+#crystal-light{position:absolute;inset:0;width:100%;height:100%;mix-blend-mode:screen;pointer-events:none}
+#touch-crystal{z-index:2;border:0;background:transparent;padding:0;touch-action:manipulation;-webkit-tap-highlight-color:transparent;min-height:44px;outline-offset:5px}
+#touch-crystal:disabled{cursor:default}
+#touch-crystal:focus-visible{outline:1px solid #f8d699;box-shadow:0 0 25px #e7c68b55}
+.crystal-back{position:absolute;left:max(18px,env(safe-area-inset-left));top:max(18px,env(safe-area-inset-top));z-index:4;border:1px solid #edc88c70;border-radius:30px;background:#1d130cc7;backdrop-filter:blur(8px);padding:10px 18px;color:#fff0d1;font-size:13px;min-height:44px}
+.crystal-back:hover{background:#3c2b1de6}
+.crystal-caption{position:absolute;bottom:max(24px,env(safe-area-inset-bottom));left:20px;right:20px;z-index:3;display:flex;align-items:center;flex-direction:column;gap:8px;text-align:center;pointer-events:none;text-shadow:0 2px 12px #000,0 1px 4px #000}
+.crystal-caption p{margin:0;font:14px var(--serif);letter-spacing:.07em;color:#f8e6c6}
+.crystal-caption button{pointer-events:auto;background:#1e130dcc;border:1px solid #a68a5a80;color:#ead3aa;font-size:12px;padding:8px 18px;border-radius:25px;min-height:44px}
+@media(max-width:700px){.crystal-back{font-size:12px;padding:9px 14px}.crystal-caption{bottom:max(30px,env(safe-area-inset-bottom))}.crystal-caption p{font-size:13px}}
+@media(prefers-reduced-motion:reduce){.crystal-stage,.revealing .crystal-reveal{transition:none;filter:none}}
+
+/* Match the invitation's aged paper and flowing pen lettering throughout. */
+@font-face{font-family:'Invitation Script';src:url('assets/test-script-source.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap}
+.minimal-main .header{background:#dcb37c url('assets/invitation-paper-v2.webp') center 46%/cover no-repeat;border-bottom:1px solid #8a5b3545}
+.minimal-main .brand span{font-family:'Invitation Script',cursive!important;font-style:normal!important;color:#432714;font-size:57px;letter-spacing:0!important;line-height:1}
+#invitation{background:#e9c48d url('assets/invitation-paper-v2.webp') center/cover no-repeat;border:1px solid #a27b4d;color:#432714;padding:72px 38px 65px;box-shadow:0 20px 90px #27180e55}
+#invitation .close-dialog{color:#5b381d;font-size:26px;line-height:1;min-width:44px;min-height:44px;right:8px;top:8px;padding:8px}
+#invitation.letter-mode{padding:0;background:#24190f;max-height:94svh;border-color:#a27b4d}
+#invitation.letter-mode .close-dialog{background:#23180fd9;color:#fff1d4;border:1px solid #d4b47780;border-radius:50%;width:40px;height:40px;min-width:40px;min-height:40px;right:10px;top:10px;z-index:5}
+#continue-invitation{display:block;border:0;padding:0;background:transparent;color:inherit;cursor:pointer}
+#continue-invitation:focus-visible{outline:2px solid #edd49e;outline-offset:-5px}
+.fold-front{background-image:url('assets/invitation-minimal-v2.webp')}
+.fold-back{background-image:url('assets/invitation-paper-v2.webp')}
+#invite-form h2{font-family:'Invitation Script',cursive;font-size:57px;font-style:normal;font-weight:400;line-height:1.15;text-align:center;color:#432714;margin:0 0 38px;white-space:nowrap}
+#invite-form form{margin:0}
+#invite-form label{font-size:13px;margin:0 0 10px;color:#432714}
+#invite-form input{background:#fff8e5a6;color:#3d2514;border:1px solid #885a355c;border-radius:3px;min-height:50px;font-size:15px;box-shadow:inset 0 1px 5px #63391912}
+#invite-form input::placeholder{color:#79624e}
+@media(max-width:700px){.minimal-main .brand span{font-size:47px}#invitation{padding:68px 27px 54px}#invite-form h2{font-size:clamp(37px,11vw,50px);margin-bottom:32px}#invitation.letter-mode{padding:0}}
+
+/* Fine parchment-map ornaments frame the school name without covering it. */
+.banner-ornament{position:absolute;top:50%;transform:translateY(-50%);width:min(24vw,320px);height:85%;color:#72502c;opacity:.68;pointer-events:none}
+.banner-castle{left:6%}.banner-celestial{right:6%}
+.banner-ornament path,.banner-ornament circle{vector-effect:non-scaling-stroke;stroke-width:.7px}
+.letter-writing{position:absolute;left:31%;top:59%;width:38%;aspect-ratio:600/220;display:block;opacity:0;pointer-events:none;z-index:4}
+.writing-word{position:absolute;inset:0;width:100%;height:100%;overflow:visible;filter:drop-shadow(0 0 2px #ffdc9666)}
+.writing-glyph{fill:#493017;fill-opacity:0;stroke:#76502a;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.writing-pen{position:absolute;width:clamp(70px,44%,130px);aspect-ratio:1448/1086;display:block;transform:translate(-13.54%,-96.87%) rotate(var(--writing-tilt,-18deg));transform-origin:13.54% 96.87%;filter:drop-shadow(0 5px 5px #27170a55);pointer-events:none}
+.writing-pen img{display:block;width:100%;height:100%;object-fit:contain}
+.writing-pen::after{content:'';position:absolute;left:13.54%;top:96.87%;width:7px;height:7px;border-radius:50%;transform:translate(-50%,-50%);background:#fff8d0;box-shadow:0 0 5px 2px #fff0b8,0 0 13px 4px #bcadff99,0 0 20px 7px #8be9ff44}
+#invitation[open].letter-mode .ink-complete .writing-word{animation:written-glow 4s ease-in-out infinite}
+@keyframes written-glow{0%,100%{filter:drop-shadow(0 0 2px #eac48255)}50%{filter:drop-shadow(0 0 4px #fde4b1cc) drop-shadow(0 0 6px #99d6ee66)}}
+.page-inactive .writing-word{animation-play-state:paused!important}
+@media(max-width:700px){.banner-ornament{width:64px;height:68%;opacity:.6}.banner-castle{left:7px}.banner-celestial{right:7px}}
+@media(max-width:360px){.banner-ornament{width:46px}.minimal-main .brand span{font-size:43px}}
+@media(prefers-reduced-motion:reduce){#invitation[open].letter-mode .ink-complete .writing-word{animation:none}}
+
+/* A saved name turns the parchment into warm, drifting stardust. */
+#save-invitation-name{display:flex;align-items:center;justify-content:center;gap:18px;width:100%;margin:24px 0 0;padding:11px 18px;min-height:46px;border:1px solid #8f6635;border-radius:3px;background:#926a35;color:#fff4da;font-size:14px;box-shadow:0 5px 18px #6e401720}
+#save-invitation-name:hover{background:#805a29}#save-invitation-name:disabled{opacity:.7}
+#name-save-status{margin:0;font-size:12px;color:#633c19;line-height:1.6}
+#name-save-status:not(:empty){margin-top:12px}
+#invitation.name-saving{animation:name-seal-flash .7s ease-out both}
+#invitation.name-saving input{box-shadow:0 0 15px #fff0aacc,0 0 25px #d3b7ff66;border-color:#d6b97c}
+@keyframes name-seal-flash{0%{filter:brightness(1)}55%{filter:brightness(1.3);box-shadow:0 0 65px #ffe5a68c}100%{filter:brightness(1.08)}}
+#name-ceremony{position:fixed;inset:0;margin:0;width:100%;max-width:none;height:100dvh;max-height:none;padding:0;border:0;background:transparent;box-shadow:none;overflow:hidden;color:#fff3d2}
+#name-ceremony::backdrop{background:#20384980;backdrop-filter:blur(10px)}
+#name-stardust{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:3}
+.ceremony-paper{position:absolute;overflow:hidden;background:#e9c48d url('assets/invitation-paper-v2.webp') center/cover no-repeat;border:1px solid #a27b4d;color:#432714;box-shadow:0 20px 90px #27180e55;transform-origin:center;pointer-events:none;z-index:2;will-change:mask-image,opacity,transform}
+.ceremony-paper::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom,transparent calc(var(--dissolve-edge,100%) - 9%),#ffedac99 calc(var(--dissolve-edge,100%) - 3%),#fffbe6 var(--dissolve-edge,100%),transparent calc(var(--dissolve-edge,100%) + 5%));mix-blend-mode:screen}
+.ceremony-paper h2{font-family:'Invitation Script',cursive;font-size:57px;font-weight:400;line-height:1.15;text-align:center;color:#432714;margin:0 0 38px;white-space:nowrap}
+.ceremony-label{font-size:13px;margin:0 0 10px}
+.ceremony-ink{display:flex;align-items:center;min-height:50px;padding:12px 14px;font-size:15px;border:1px solid #885a355c;border-radius:3px;background:#fff8e5a6;box-shadow:0 0 18px #fff0aa66}
+.ceremony-seal{display:flex;align-items:center;justify-content:center;min-height:46px;margin:24px 0 0;padding:11px 18px;font-size:14px;background:#926a35;color:#fff4da;border:1px solid #8f6635;border-radius:3px}
+.ceremony-result{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px;text-align:center;pointer-events:none;opacity:0;transform:translateY(18px) scale(.95);filter:blur(14px);transition:opacity 1.7s ease,filter 1.7s ease,transform 1.7s ease;z-index:1}
+.name-visible .ceremony-result{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}
+#revealed-name{position:relative;max-width:86vw;margin:0;font:400 clamp(64px,11vw,130px)/1.3 'Invitation Script',cursive;white-space:nowrap;text-shadow:0 0 12px #fff2c266,0 0 32px #d9b2ff66,0 3px 10px #0a193a66;outline:none;overflow-wrap:normal}
+#revealed-name.korean-name{font-family:'Magic Handwriting KO','Nanum Pen Script','궁서',cursive;font-style:normal;font-size:clamp(58px,11vw,112px)}
+.name-halo{position:absolute;left:50%;top:50%;width:min(72vw,650px);aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(ellipse,#fff3b824 0%,#b1d6ff19 26%,#a6a4ff0b 49%,transparent 70%);filter:blur(15px)}
+.name-storage-note{position:relative;font-size:11px;letter-spacing:.13em;margin:24px 0 0;color:#fff2d3c9;text-shadow:0 2px 7px #102138aa}
+#close-name-ceremony{position:absolute;right:max(18px,env(safe-area-inset-right));top:max(20px,env(safe-area-inset-top));z-index:5;display:grid;place-items:center;width:44px;height:44px;padding:0;border:1px solid #f4dcaa77;border-radius:50%;background:#21344077;color:#fff3d3;font:28px/1 Georgia,serif;opacity:0;transition:opacity .7s}
+.name-visible #close-name-ceremony{opacity:1}
+.name-ceremony-open .wand-visual,.name-ceremony-open .quill-visual{animation-play-state:paused}
+@media(max-width:700px){.ceremony-paper h2{font-size:clamp(37px,11vw,50px);margin-bottom:32px}}
+@media(prefers-reduced-motion:reduce){#invitation.name-saving{animation:none}.ceremony-result{transition:none;filter:none;transform:none}.name-visible #close-name-ceremony{transition:none}}
+
+/* Touch the compass star; the two physical door planes swing toward the viewer. */
+#library-portal{position:absolute;inset:0;z-index:4;overflow:hidden;background:#21170f;opacity:0;transition:opacity 1.1s ease}
+#library-portal[hidden]{display:none}
+#library-portal.portal-arrived{opacity:1}
+.portal-active .ceremony-result{opacity:0;filter:blur(12px);transition-duration:1.1s}
+.portal-active #name-stardust{opacity:0;transition:opacity .7s}
+.portal-backdrop{position:absolute;inset:-25px;background:#21170f url('assets/library-door-open-v1.webp') center/cover no-repeat;filter:blur(18px) brightness(.42)}
+.library-stage{position:absolute;left:50%;top:50%;width:56.25dvh;height:100dvh;transform:translate(-50%,-50%);perspective:180dvh;perspective-origin:50% 40%;isolation:isolate}
+.library-door-view{display:block;width:100%;height:100%;object-fit:fill;filter:brightness(.68);transition:filter 4s ease}
+.library-door-pair{position:absolute;inset:0 0 auto;height:80.2%;transform-style:preserve-3d;pointer-events:none;z-index:2}
+.library-door-leaf{position:absolute;top:0;width:50.05%;height:100%;background-image:url('assets/library-door-closed-v1.webp');background-size:200% 100%;background-repeat:no-repeat;backface-visibility:hidden;will-change:transform,opacity;box-shadow:0 14px 28px #140b05b3;transition:none}
+.door-leaf-left{left:0;background-position:0 0;transform-origin:0 50%;transform:rotateY(0deg)}
+.door-leaf-right{right:0;background-position:100% 0;transform-origin:100% 50%;transform:rotateY(0deg)}
+.door-center-light{position:absolute;left:calc(50% - 1px);top:0;bottom:0;width:2px;opacity:.55;background:linear-gradient(transparent,#f4cd66aa 20%,#fff4bd 45%,#ffe6a877 80%,transparent);box-shadow:0 0 8px #ffc65f88;transition:opacity 1.5s ease}
+#open-library-door{position:absolute;inset:0 0 auto;width:100%;height:80.2%;border:0;padding:0;background:transparent;z-index:4;touch-action:manipulation}
+#open-library-door:disabled{cursor:default}
+#open-library-door:focus-visible{outline:2px solid #ffe1a4;outline-offset:-8px}
+.door-star-light{position:absolute;left:50%;top:38.4%;width:51%;aspect-ratio:1;transform:translate(-50%,-50%);pointer-events:none;opacity:.7;animation:door-star-breathe 3.4s ease-in-out infinite}
+.door-star-light::before{content:'';position:absolute;left:50%;top:50%;width:32%;height:32%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(#fff4c877,#f1b74333 38%,transparent 70%);box-shadow:0 0 28px #ffd88b44}
+.door-star-light svg{display:block;width:100%;height:100%;overflow:visible;filter:drop-shadow(0 0 4px #ffdf8d99) drop-shadow(0 0 11px #ffca6b55)}
+.door-star-light path{fill:#ffdf9533;stroke:#fff0ad;stroke-width:.65;stroke-linejoin:round}
+.door-star-light circle{fill:#fff0a31a;stroke:#fff1a980;stroke-width:.7}
+.star-touch-ring{position:absolute;left:50%;top:50%;width:30%;aspect-ratio:1;border:1px solid #ffe7a777;border-radius:50%;transform:translate(-50%,-50%);animation:door-touch-ring 3.4s ease-out infinite}
+@keyframes door-star-breathe{0%,100%{opacity:.35;filter:brightness(.9)}50%{opacity:1;filter:brightness(1.45)}}
+@keyframes door-touch-ring{0%{transform:translate(-50%,-50%) scale(.75);opacity:0}20%{opacity:.6}85%,100%{transform:translate(-50%,-50%) scale(2.5);opacity:0}}
+.door-opening .library-door-leaf{transition:transform 4.8s cubic-bezier(.22,.5,.32,1),opacity 1.1s ease 3.6s;opacity:0}
+.door-opening .door-leaf-left{transform:rotateY(-100deg)}
+.door-opening .door-leaf-right{transform:rotateY(100deg)}
+.door-opening .door-center-light{opacity:0}
+.door-opening .door-star-light{animation:door-star-release .9s ease-out forwards}
+.door-opening .star-touch-ring{animation:none;opacity:0}
+.door-opening .library-door-view{filter:brightness(1)}
+.door-open .library-door-pair{visibility:hidden}
+@keyframes door-star-release{0%{opacity:1;filter:brightness(1.4)}30%{opacity:1;filter:brightness(2.4);transform:translate(-50%,-50%) scale(1.035)}100%{opacity:0;transform:translate(-50%,-50%) scale(1.1)}}
+.portal-beams{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0;background:conic-gradient(from 160deg at 53% 24%,transparent 0deg,#ffe4a31a 7deg,transparent 12deg,#ffe9ae10 22deg,transparent 28deg);mix-blend-mode:screen}
+.door-opening .portal-beams{animation:portal-welcome-light 5.3s ease-out both}
+@keyframes portal-welcome-light{0%{opacity:0}35%{opacity:1}100%{opacity:.25}}
+.portal-sparkles{position:absolute;inset:0;z-index:5;pointer-events:none;overflow:hidden}
+.portal-sparkles i{position:absolute;left:var(--spark-x);top:var(--spark-y);width:3px;height:3px;border-radius:50%;background:#fff4c7;box-shadow:0 0 7px 2px #ffd37b99;opacity:0}
+.door-opening .portal-sparkles i{animation:door-spark-flight 3.4s ease-out var(--spark-delay) both}
+@keyframes door-spark-flight{0%{opacity:0;transform:translate(0,0) scale(.3)}15%{opacity:.95}100%{opacity:0;transform:translate(var(--spark-dx),var(--spark-dy)) scale(.3)}}
+#library-door-status{position:absolute;bottom:max(18px,env(safe-area-inset-bottom));left:20px;right:20px;margin:0;text-align:center;color:#fff0ce;font-size:12px;text-shadow:0 2px 8px #130b04;pointer-events:none}
+.door-open ~ #library-door-status{clip-path:inset(50%);height:1px;overflow:hidden}
+#retry-library-door,#replay-library-door{position:absolute;right:18px;bottom:max(18px,env(safe-area-inset-bottom));z-index:6;padding:9px 13px;border:1px solid #e7c99070;border-radius:25px;background:#271b10bb;color:#fff0ce;font-size:12px}
+#retry-library-door{bottom:54px}
+.page-inactive .door-star-light,.page-inactive .star-touch-ring,.page-inactive .portal-sparkles i{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){#library-portal,.portal-active .ceremony-result{transition:none}.door-star-light,.star-touch-ring,.door-opening .door-star-light,.door-opening .portal-beams,.door-opening .portal-sparkles i{animation:none}.star-touch-ring{display:none}.door-opening .library-door-leaf{transition:none}.door-opening .door-star-light{opacity:0}.door-open .library-door-view{filter:brightness(1)}}
+
+/* The portrait book and its ink share one plane so the writing floats with the pages. */
+#spellbook-scene{position:absolute;inset:0;z-index:5;overflow:hidden;opacity:var(--book-fade,0);transform:translateY(calc(-9% + var(--book-approach,0)*9%)) scale(calc(.75 + var(--book-approach,0)*.25));transform-origin:50% 60%;pointer-events:none}
+#spellbook-scene[hidden]{display:none}
+#spellbook-room,.spellbook-float,.spellbook-cutout,#spellbook-ink{position:absolute;inset:0;display:block;width:100%;height:100%}
+#spellbook-room{object-fit:fill}
+.book-approaching .library-door-view{transform:scale(calc(1 + var(--book-approach,0)*1.6));transform-origin:50% 55%;opacity:calc(1 - var(--book-fade,0));will-change:transform,opacity}
+.spellbook-float{transform:translateY(var(--book-lift,0%)) rotate(var(--book-tilt,0deg));transform-origin:50% 78%;will-change:transform}
+.spellbook-cutout{object-fit:fill;clip-path:polygon(0% 58.3%,3% 57.3%,10% 56.8%,20% 56.2%,30% 56%,40% 56.5%,46% 57.7%,51.5% 60%,56% 58%,64% 57.4%,76% 57.2%,89% 58%,100% 59.3%,100% 94.8%,79% 95.3%,64% 96.5%,57% 97.5%,50% 98.5%,43% 97%,25% 96%,0% 95.9%)}
+.spellbook-shadow{position:absolute;left:8%;right:8%;top:92%;height:4.5%;border-radius:50%;background:#170c06b3;filter:blur(15px);opacity:calc(var(--book-approach,0)*.7);transform:scaleX(.93)}
+#spellbook-ink{overflow:visible}
+.spellbook-page-shade{fill:#45301e;opacity:.19}
+.spellbook-name-ink{position:absolute;inset:0;display:block;width:100%;height:100%;pointer-events:none;mix-blend-mode:multiply}
+#spellbook-writing-tip{display:none}
+#retry-spellbook{position:absolute;left:50%;bottom:24%;transform:translateX(-50%);z-index:7;border:1px solid #e7c99070;border-radius:24px;background:#271b10dd;color:#fff0ce;padding:12px 20px}
+@media(prefers-reduced-motion:reduce){.book-ink-complete #spellbook-lines{animation:none}.spellbook-float,.book-approaching .library-door-view{will-change:auto}}
+
+/* Selected iox heraldic artwork: keep all live controls and scene scripts. */
+.minimal-main{--main-header-height:clamp(112px,35.11989vw,190px)}
+.minimal-main .header{height:var(--main-header-height);padding:0;border:0;background:#e9bc77 url('assets/invitation-paper-v2.webp') center/cover no-repeat;overflow:hidden}
+.minimal-main .header .brand{display:block;width:100%;height:100%;line-height:0}
+.main-header-art{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+.minimal-main .landscape{inset:var(--main-header-height) 0 0;height:auto;min-height:0;background-image:url('assets/castle-main-clean-v1.webp');background-position:center;background-size:cover;filter:none}
+.minimal-main .hero{height:calc(100svh - var(--main-header-height));height:calc(100dvh - var(--main-header-height));min-height:360px;padding:0}
+.minimal-main .wand-stage{top:40%;width:min(1320px,100vw);height:150px}
+.minimal-main .quill-test{top:66%;--pen-width:clamp(78px,20.03vw,142px)}
+@media(max-width:700px){.minimal-main .wand-visual{width:100%}.minimal-main .header{height:var(--main-header-height)}.main-header-art{object-fit:fill}}
+@media(max-width:340px){.minimal-main{--main-header-height:35.11989vw}}
+@media(max-height:520px) and (min-width:701px){.minimal-main{--main-header-height:112px}.minimal-main .hero{min-height:300px}}
+/* Preserve the reference banner ratio through tablet widths as well as phones. */
+@media(max-width:900px){.minimal-main{--main-header-height:35.11989vw}.main-header-art{object-fit:fill}.minimal-main .wand-visual{width:96%}}
+.minimal-main .quill-test{--pen-width:clamp(96px,25.1vw,178px)}
+/* Tall phones show both book pages, including the complete saved name. */
+.library-stage{width:min(100vw,56.25dvh);height:min(100dvh,177.77778vw)}

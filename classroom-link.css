@@ -1,0 +1,11 @@
+.book-name-light{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:0;mix-blend-mode:screen;filter:drop-shadow(0 0 3px #ffdf8e) drop-shadow(0 0 11px #ffc15a)}
+.book-name-calling .book-name-light{animation:name-call-light 2s ease-in-out infinite}
+#enter-art-classroom{position:absolute;z-index:8;pointer-events:auto;background:transparent;border:0;padding:0;cursor:pointer;border-radius:18px;color:#ffe0a0;touch-action:manipulation}
+#enter-art-classroom[hidden]{display:none}
+#enter-art-classroom:focus-visible{outline:2px solid #ffe1a0;outline-offset:3px;box-shadow:0 0 22px #ffd88199}
+.book-touch-cue{position:absolute;bottom:calc(100% + 5px);left:50%;transform:translateX(-50%);display:flex;align-items:center;flex-direction:column;gap:3px;font-family:'Nanum Pen Script',serif;font-size:clamp(16px,2.7dvh,25px);font-weight:600;white-space:nowrap;filter:drop-shadow(0 0 4px #dfa13a);animation:touch-name-bob 1.5s ease-in-out infinite}
+.book-touch-cue svg{width:22px;height:36px;overflow:visible;fill:none;stroke:currentColor;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}
+.classroom-entering{opacity:0!important;transition:opacity .42s ease!important}
+@keyframes name-call-light{0%,100%{opacity:.3;filter:drop-shadow(0 0 2px #ffdf8e) drop-shadow(0 0 7px #ffc15a)}50%{opacity:.95;filter:drop-shadow(0 0 5px #fff0bf) drop-shadow(0 0 17px #ffc15a)}}
+@keyframes touch-name-bob{0%,100%{translate:0 -5px}50%{translate:0 2px}}
+@media(prefers-reduced-motion:reduce){.book-name-calling .book-name-light{animation:none;opacity:.6}.book-touch-cue{animation:none}.classroom-entering{transition:none!important}}

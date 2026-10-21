@@ -1,18 +1,66 @@
 # IOX Magic School
 
-Interactive mobile web experience with an ornate Magic School / iox header, animated wand and quill, personalized invitation, library entrance, and a name that gradually appears as printed ink on a spellbook page.
+밝은 수채화 성 배경과 RGB 지팡이, 금속 펜촉에 RGB 빛이 비치는 검은 클래식 깃털 펜을 갖춘 반응형 정적 웹앱입니다. 메인 버튼에는 글자를 표시하지 않습니다.
 
-## Deployment
+## 실행
 
-Static HTML, CSS, and JavaScript. Deploy the repository root to Vercel with Framework Preset Other and no build command.
+index.html을 정적 웹 서버에서 제공합니다. 빌드, Node 의존성, API 키가 필요하지 않습니다.
 
-## Features
+## Vercel
 
-- Wand and crystal experience
-- Invitation and touch writing with sound
-- Locally saved visitor name
-- Library door and book approach sequence
-- Paper-textured printed-ink name reveal
-- Mobile and desktop layouts
+Framework Preset: Other. Root Directory: 저장소 루트. Build Command와 Output Directory는 비워 둡니다.
 
-Assets and source are maintained in this repository.
+## 현재 기능
+
+- PC·모바일 반응형 메인
+- 빛나는 깃털 펜 버튼 → 효과음과 함께 펼쳐지는 양피지 초대장 → 이름 입력
+- 첫 초대장의 문구는 ‘당신을 초대합니다’만 표시; 종이를 누르면 이름 입력으로 이동
+- 움직임 줄이기 설정과 백그라운드 애니메이션 일시정지
+- 펜촉에서 퍼지는 두 개의 작은 빛 고리와 천천히 떠다니는 깃털 펜
+- 지팡이와 내부 RGB 빛이 함께 천천히 떠다니는 14초 주기의 부유 동작
+- 지팡이 클릭 → 도서관 수정구 → 수정구 터치 시 마법사 타로카드가 4.6초 동안 점차 나타나는 체험
+
+이름은 이 기기의 localStorage에 저장됩니다. 실제 계정 가입, 적성 채점, 외부 생성 API와 결제는 연결되지 않았습니다. 입력 내용은 서버로 전송되지 않습니다.
+
+## 라이선스
+
+기본 글꼴은 assets/FONT-LICENSE.txt, 필기체는 assets/TEST-SCRIPT-LICENSE.txt를 참조하세요. 이미지 자산은 프로젝트용 생성 이미지와 사용자가 제공한 참조 사진으로 구성됩니다.
+
+
+2026-10-20: 메인 버튼을 Your Invitation으로 변경했습니다. 고풍스러운 Chancery 필기체를 벡터로 그려 남색 잉크와 RGB 외곽선 효과를 유지합니다. 긴 문구와 깃털 펜은 좁은 화면에서 함께 축소됩니다.
+
+2026-10-20 23:44: Your Invitation 글자만 너비와 높이를 각각 50%로 축소하고 반시계 방향으로 6도 기울였습니다.
+
+2026-10-20 23:56: 메인 Your Invitation 글자를 삭제하고 펜촉에만 은은한 RGB 발광 효과를 적용했습니다. 깃털 펜을 누르면 무음 초대장이 열립니다.
+
+2026-10-21 00:42: 사용자가 첨부한 1. Click.MP3(약 0.47초)를 assets/invitation-open-v1.mp3로 포함했습니다. 초대장 열기·다시 펼치기·다시 보기에서 한 번씩 재생하며 볼륨은 65%입니다. 빠르게 다시 눌러도 음원이 겹치지 않고 처음부터 시작합니다. 닫기·작성하기 이동·다른 탭 전환 시 소리를 멈춥니다. 페이지 진입 시 자동 재생하지 않습니다.
+
+2026-10-21 00:44: 초대장 효과음을 사용자가 첨부한 aaa.mp3(약 1.80초)로 교체했습니다. assets/invitation-open-v2.mp3를 사용하며 기존 볼륨과 재생 동작을 유지합니다.
+
+2026-10-21 01:04: 초대장 효과음을 첨부 a222.mp3(약 1.07초)로 교체했습니다. assets/invitation-open-v3.mp3를 사용하며 기존 볼륨 65%와 재생 동작을 유지합니다.
+
+2026-10-21 01:09: 펜촉에 3.6초 주기의 가느다란 빛 고리 두 개를 추가했습니다. 깃털과 펜촉은 함께 7.2초 주기로 약 7px 범위에서 부유하며 살짝 회전합니다. 배경 탭·초대장 표시 중에는 멈추고, 움직임 줄이기 설정에서는 고리와 부유 동작을 끕니다.
+
+2026-10-21 01:31: 지팡이와 RGB 캔버스를 감싸는 동일 레이어에 10초 주기 부유 동작을 추가했습니다. 수평 중심을 유지하며 위아래로 미세하게 이동하고 최대 약 0.4도 기울어집니다. 배경 탭·초대장 표시 중에는 일시정지하고 움직임 줄이기에서는 정지합니다.
+
+2026-10-21 01:36: 지팡이 부유 범위를 확대하고 주기를 10초에서 14초로 늘렸습니다. 화면 크기에 따라 위쪽 이동량은 7~16px, 아래쪽은 5px이며 기울기는 -0.55~0.65도입니다.
+
+2026-10-21 02:18: 첨부한 수정구 원본 두 장을 도서관 체험에 적용했습니다. 지팡이는 키보드로도 열 수 있는 버튼이며, 수정구를 누르면 내부에 마법사 카드가 4.6초에 걸쳐 드러납니다. 빛 실타래·입자는 캔버스로 구슬 내부에서 움직입니다. 돌아가기·Escape·다시 보기, 움직임 줄이기·배경 탭 일시정지, 화면 비율별 구슬 크기를 지원합니다. 깃털의 초대장과 기존 효과음은 유지합니다.
+
+2026-10-21 03:09: 메인 배너와 이름 입력 창에 첫 초대장의 색감에 맞춘 양피지 텍스처를 적용했습니다. 배너 Magic School과 이름 창 You Are Invited는 기존 프로젝트의 Z003 필기체 폰트를 사용합니다. 펼쳐지는 초대장에서는 ‘당신을 초대합니다’만 남겼고, 종이를 누르면 영문 제목·한글 이름 라벨·입력란만 표시됩니다. 창작 분야 선택·설명·작성 및 다운로드 버튼과 기존 결과 화면은 제거했습니다. 수정구와 타로카드 체험은 유지합니다.
+
+2026-10-21 03:25: 초대장에 Touch 필기체 SVG와 펜촉 발광을 추가했습니다. 종이가 펼쳐진 뒤 펜이 글자 윤곽을 따라 움직이고 잉크가 나타납니다. 작성 후 잠시 부유하다 11초 간격으로 반복하며, 배경 탭에서는 멈추고 움직임 줄이기 설정에서는 완성된 글자와 펜만 표시합니다. 종이 어디를 눌러도 기존 이름 입력으로 이동합니다. 메인 배너에는 성·별자리·초승달·나침반의 가는 잉크 문양을 추가했습니다.
+
+2026-10-21 03:48: 이름 새기기 버튼과 키보드 완료키로 이름을 localStorage(iox.magic-school.member.v1)에 저장합니다. 재방문 시 입력란에 복원하며 서버로 이름을 전송하지 않습니다. 저장 성공 후 양피지 가장자리가 금빛 가루로 풀리고 중앙에 이름이 나타납니다. Latin 이름은 포함된 Z003 필기체, 한글은 Google Fonts Nanum Pen Script 웹폰트(온라인 연결 필요)와 기기 궁서/필기체 대체 글꼴을 사용합니다. 24자 이름 자동 축소, 한글 조합 입력 보호, 중복 제출 방지, 저장 실패 안내, 배경 탭 일시정지, 움직임 줄이기 지원을 포함합니다. 저장 완료 알림은 이 기기 저장을 명시하며 계정 등록을 의미하지 않습니다.
+
+2026-10-21 04:08: 이름 표시 후 2.6초 뒤 닫힌 도서관 문으로 전환합니다. 별과 터치 고리가 3.4초 간격으로 빛나며, 문을 누르거나 Enter/Space를 누르면 두 문짝이 4.8초 동안 경첩 중심으로 회전하고 5.3초에 첨부한 도서관 장면으로 완성됩니다. 다시 보기와 메인 복귀, 자산 사전 로딩, 중복 터치 방지, 이름 대기 시간의 배경 탭 정지, 움직임 줄이기를 지원합니다. 문 열기 효과음은 추가하지 않았습니다. 원본 첨부 사진은 library-door-open-v1.webp, 새로 제작한 닫힌 문은 library-door-closed-v1.webp입니다.
+
+2026-10-21: 도서관 문이 열린 뒤 6초 동안 책 앞으로 다가가는 확대·교차 전환을 추가했습니다. 첨부 책 사진(spellbook-close-v1.webp)을 책 윤곽으로 잘라, 책만 지운 배경(spellbook-room-clean-v1.webp) 위에서 별도로 부유시킵니다. 책과 SVG 글씨는 같은 레이어에서 움직입니다. 페이지 곡면에 맞춘 18줄의 영문 필기체가 8.7초 동안 흰색과 옅은 청백색 빛으로 순차적으로 나타납니다. 완성 후 은은한 발광을 유지하며 약 9초 주기의 미세 부유와 약 14초 주기의 작은 기울기가 이어집니다. 배경 탭에서는 시간을 멈추며, 움직임 줄이기 설정에서는 전환 없이 완성된 책과 글씨를 표시합니다. 다시 보기는 문이 닫힌 상태부터 초기화합니다. 책 자산은 이름 저장 시작 때 미리 불러오며 실패 시 재시도 버튼을 표시합니다. 새 효과음은 추가하지 않았습니다.
+
+## Latest book inscription update — 2026-10-21 KST
+
+The book now writes only the saved visitor name, one character at a time, in dark ink at the lower center. No pen, white glow or English prose is rendered in this scene. Original page diagrams, door animation and camera movement are retained. See BOOK_TRANSITION_UPDATE.md for timing and layout.
+
+2026-10-21: 첨부한 책 이미지로 교체하고 이름 위치를 오른쪽 페이지 하단 빈칸으로 옮겼습니다. 기존의 획 가로 닦기 효과를 각 글자가 서서히 짙어지는 2.3초 잉크 정착 효과로 바꿨습니다. 도형에서 채취한 갈색, 종이색을 통과시키는 multiply 합성, 고정된 잉크 입자와 페이지 곡률을 적용합니다. 앞에서 입력한 이름을 사용하며 최종 글씨는 발광하지 않습니다. BOOK_TRANSITION_UPDATE.md에 동작과 시간을 기록했습니다.
+
+2026-10-21: 첨부한 `1000058705.png` 디자인을 메인에 적용했습니다. 원본의 고딕 성·방패·Magic School·필기체 iox 상단 장식을 이미지 그대로 사용합니다. 지팡이와 깃털이 없는 별도의 성 배경 위에 기존의 실제 버튼과 RGB·부유 레이어를 배치했습니다. 초대장 효과음/펼침/Touch 쓰기, 이름 저장, 도서관 문, 책 접근과 갈색 잉크 이름, 수정구 카드, 다시 보기 및 움직임 줄이기 동작은 기존 스크립트를 그대로 사용합니다.
